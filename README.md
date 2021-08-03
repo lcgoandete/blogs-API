@@ -2,29 +2,10 @@
 
 # Boas vindas ao repositório do API de Blogs!
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por Slack! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um Pull Request para colocar seus códigos.
-
 ---
 
 # Sumário
 
-- [Habilidades](#habilidades)
-- [Entregáveis](#entregáveis)
-  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-  - [Desenvolvimento](#desenvolvimento)
-  - [Data de entrega](#data-de-entrega)
-- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-  - [Execução de testes unitários](#execução-de-testes-unitários)
-- [Como desenvolver](#como-desenvolver)
-  - [Linter](#linter)
-- [Requisitos do projeto](#requisitos-do-projeto)
-  - [Antes de começar](#antes-de-começar)
-  - [Observações importantes](#-observações-importantes)
-    - [Dicas](#dicas)
   - [Lista de Requisitos](#lista-de-requisitos)
     - [1 - Sua aplicação deve ter o endpoint POST `/user`](#1---sua-aplicação-deve-ter-o-endpoint-post-user)
     - [2 - Sua aplicação deve ter o endpoint POST `/login`](#2---sua-aplicação-deve-ter-o-endpoint-post-login)
