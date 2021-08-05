@@ -1,4 +1,4 @@
-const { BlogPost, Category, User } = require('../models');
+const { BlogPost, Category, User, PostCategory } = require('../models');
 const { isValidToken } = require('./utils/tokenValidate');
 const { isValidfields, isExistPost,
   isvalidfieldsForUpdate, isValidUser } = require('./utils/blogPostValidate');
@@ -6,10 +6,14 @@ const { isValidfields, isExistPost,
 const create = async (blogPost, authorization) => {
   await isValidfields(blogPost);
   const userId = isValidToken(authorization);
+  
   const { categoryIds, ...blogPostWithoutCategories } = blogPost;
   const newBlogPost = { userId, ...blogPostWithoutCategories };
-  
   const post = await BlogPost.create(newBlogPost);
+
+  const postId = post.dataValues.id;
+  blogPost.categoryIds.forEach(async (categoryId) => PostCategory.create({ postId, categoryId }));
+
   const { published, updated, ...result } = post.dataValues;
   return result;
 };
