@@ -1,7 +1,7 @@
 ---
 
 # Boas vindas ao repositório do API de Blogs!
-
+Projeto elaborado e proposto as pessoas estudantes da [Trybe][trybe]
 ---
 
 # Sumário
@@ -584,4 +584,4 @@ Se não conter o campo `content` o resultado retornado deverá ser conforme exib
 ![blogpost com token inválido](./public/editarsemcontent.png)
 
 --- 
-
+[trybe]: https://www.betrybe.com/
